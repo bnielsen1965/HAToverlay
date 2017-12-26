@@ -74,6 +74,7 @@ Next edit the file config.txt and add the dtoverlay and dtparam settings for the
 USB serial console and i2c device...
 
 > dtoverlay=dwc2
+
 > dtparam=i2c1=on,i2c1_baudrate=400000
 
 
@@ -122,7 +123,7 @@ b) Open a terminal and cd into the {mount path}/etc/systemd/system/getty.target.
 > cd /run/media/bnielsen/f2100b2f-ed84-4647-b5ae-089280112716/etc/systemd/system/getty.target.wants
 
 c) As the super user create the symbolic link.
-> sudo ln -s /lib/systemd/system/getty@.service gettyGS0.service
+> sudo ln -s /lib/systemd/system/getty@.service getty@ttyGS0.service
 
 
 ##### Enable i2c device nodes
@@ -152,7 +153,7 @@ b) At the prompt cd into /etc/systemd/system/getty.target.wants path, i.e.
 > cd /etc/systemd/system/getty.target.wants
 
 c) As the super user create the symbolic link.
-> sudo ln -s /lib/systemd/system/getty@.service gettyGS0.service
+> sudo ln -s /lib/systemd/system/getty@.service getty@ttyGS0.service
 
 
 ##### Enable i2c device nodes
