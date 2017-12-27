@@ -77,6 +77,8 @@ USB serial console and i2c device...
 
 > dtparam=i2c1=on,i2c1_baudrate=400000
 
+> dtparam=spi=on
+
 
 #### Optional Explorer HAT overlay
 
