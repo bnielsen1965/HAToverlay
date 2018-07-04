@@ -11,9 +11,9 @@
             pinctrl-0 = <&openaps_pins>;
 
             openaps_pins: openaps_pins {
-                brcm,pins = <4 17 27>;     /* gpio no. */
-                brcm,function = <0 0 0>; /* 0:in, 1:out */
-                brcm,pull = <2 2 2>;     /* 2:up 1:down 0:none */
+                brcm,pins =     <4 17 27 19 23 24 21>;     /* gpio no. */
+                brcm,function = <0 0  0  1  1  0  0>; /* 0:in, 1:out */
+                brcm,pull =     <2 2  2  0  0  0  2>;     /* 2:up 1:down 0:none */
             };
         };
     };
